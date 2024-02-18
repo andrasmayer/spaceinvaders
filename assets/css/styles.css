@@ -1,0 +1,31 @@
+#screen{
+    background-color:black;
+    max-width: calc( 13 * 37px);
+   
+}
+#data{
+    position: absolute;
+    color:white;
+    background-color:#ccc;
+    min-height:calc(20 * 30px);
+    min-width:100px;
+    text-align:center;
+}
+
+#data,#screen{
+    display:inline-block;
+}
+.zone{
+    display:inline-block;
+    min-width:35px;
+    min-height:30px;
+    background-color:black;
+    text-align:center;
+
+    font-size:25px;
+}    
+
+.projectile{
+    background-image: url("../img/laser_1.png");
+    background-size:cover;
+}
