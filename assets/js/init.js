@@ -2,9 +2,10 @@ const screen = document.getElementById("screen")
 const level_ = document.getElementById("level_")
 const life_ = document.getElementById("life_")
 
-const playfield = []
+let playfield = []
 
 const level_build = (lvl)=>{
+    playfield = []
     for(i=0;i<playfieldHeight;i++){
         playfield.push([]);
         for(j=0;j<playfieldWidth;j++){   
@@ -41,5 +42,9 @@ constletsPlay = setInterval(() => {
 }, gameSpeed);
 
 
-level_build(lvl_1)
+
+let curLevel = 0
+level_build(levels[curLevel])
+
+
 render()

@@ -61,7 +61,11 @@ const playerFire = (zone) =>{
             clearInterval(projectileWay)
             render()
         }
-        if(enemiesAlive == 0){  console.log("You won") }
+        if(enemiesAlive == 0){  console.log("You won for now") 
+        
+        curLevel++
+        level_build(levels[curLevel])
+    }
         zone -= playfieldWidth  
     }, "10");
 }
